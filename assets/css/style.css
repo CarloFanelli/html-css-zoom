@@ -54,11 +54,13 @@ p{
     justify-content: center;
 }
 
+/*
 .col-2{
     width: calc(100%/12 * 2);
 }
+*/
 
-div[class^="col-"]{
+.user{
     margin: 1rem 0.5rem;
 }
 
@@ -108,6 +110,11 @@ main{
     padding: 3rem 1rem;
 }
 
+.user {
+    width: 175px;
+    height: 145px;
+}
+
 .video{
     width: 100%;
 }
@@ -126,6 +133,7 @@ main{
 footer{
     background-color: var(--z-footer);
     position: fixed;
+    height: 4rem;
     bottom: 0;
     width: 100%;
     z-index: 10;
