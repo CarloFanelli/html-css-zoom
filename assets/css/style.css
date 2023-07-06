@@ -51,6 +51,7 @@ p{
 
 .row{
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col-2{
@@ -68,6 +69,9 @@ header{
     color: var(--z-light);
 }
 
+.view{
+    z-index: 9;
+}
 /*.speaker>.fa-table-cells{
     filter: invert(1);
 }*/
