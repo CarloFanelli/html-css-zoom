@@ -3,3 +3,152 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --z-dark: #000;
+    --z-light: #fff;
+    --z-nav:rgba(74, 74, 74, 1);
+    --z-nav-semi:rgba(74, 74, 74, 0.5);
+    --z-good: rgba(75, 200, 0, 1);
+    --z-attention:rgba(222, 35, 55, 1);
+}
+
+/* #section common */
+p{
+    text-transform: capitalize;
+    color: white;
+}
+
+/* #endsection common */
+
+/* #section utilities */
+
+.d-flex{
+    display: flex;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.w90{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.p-1{
+    padding: 1rem;
+}
+
+.col-2{
+    width: calc(100%/12 * 2);
+    flex-wrap: wrap;
+}
+
+/* #endsection utilities */
+
+/* #section header */
+header{
+    color: var(--z-light);
+}
+
+/*.speaker>.fa-table-cells{
+    filter: invert(1);
+}*/
+
+/* #endsection header */
+
+.view{
+    position: fixed;
+    right: 0;
+    gap: 0.3rem;
+    margin: 1rem;
+    justify-content: flex-end;
+}
+
+.speaker, .screen{
+    background-color: var(--z-nav);
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+
+.speaker{
+    gap: 0.2rem;
+}
+
+/* #section main */
+
+.container{
+    background-color: var(--z-dark);
+}
+
+.video{
+    width: 100%;
+}
+
+.details{
+    bottom: 0px;
+    color: var(--z-light);
+    padding: 0.25rem;
+    background-color: var(--z-nav-semi); 
+}
+
+/* #endsection main */
+
+/* #section footer */
+
+footer{
+    background-color: var(--z-nav);
+}
+
+.device{
+    width: 20%;
+    gap: 0.5rem;
+}
+
+footer i{
+    font-size: 2rem;
+    color: var(--z-light);
+}
+
+.more>i{
+    font-size: 1rem;
+}
+
+.mic.d-flex, .video.d-flex{
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.action{
+    text-align: center;
+}
+
+.share-screen>.action>i{
+    color: var(--z-good);
+}
+.share-screen{
+        align-items: center;
+
+}
+
+.control{
+    width: 60%;
+    justify-content: space-around;
+}
+
+/* #endsection footer */
+
+
+/* #section DEBUG */
+
+    .debug .col-2{
+        background-color: rebeccapurple;
+    }
+
+
+/* #endsection DEBUG */
